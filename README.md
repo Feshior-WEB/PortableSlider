@@ -27,7 +27,7 @@
 <li><b>Drag and Touch Handlers:</b>I implemented the touch and drag event handlers: `touchStart`, `touchEnd`, and `touchMove`. These handlers track the user's touch or mouse movement and update the current position of the slider accordingly.</li>
 <li><b> Navigation:</b> To enable slide navigation, I implemented the logic in the touchEnd() function. When the user releases the slide after dragging, this logic determines the direction and distance of the slide movement. Each item contains unique id, so we can determine at which slider user clicked and adjust the current and previous indexes accordingly. It also prevents the slider from moving out of the defined range.
 <li><b>Slider Positioning and Progress Bar:</b> I implemented functions to set the slider's position `setSliderPosition` and update the progress bar width `setProgressbarByIndex` based on the current slide index.</li>
-<li><b>Responsive Behavior:</b> To ensure the slider adapts to changes in window size, I added an event listener for the resize event. When the window is resized, the `recalculateSizes` function recalculates the card width and adding/removing event listeners.</li>
+<li><b>Responsive Behavior:</b> To ensure the slider adapts to changes in window size, I added an event listener for the resize event. When the window is resized, the `recalculateSizes` function recalculates the card width and adds/removes event listeners.</li>
 
 <h1>Usage:</h1>
 <li>You can add as many items as needed, the slider will work correctly. However, please note that the slider is disabled on the PC version, because of that it's not recommended to add more than 6 items.</li>
