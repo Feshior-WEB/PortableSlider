@@ -3,13 +3,13 @@
 <p>Responsible slider</p>
 <b>PC version</b>
 
-![alt text](https://github.com/Feshior-WEB/TractiveTask/blob/main/github_images/pc-screenshot.PNG?raw=true)
+![alt text](https://github.com/Feshior-WEB/PortableSlider/blob/main/github_images/pc-screenshot.PNG?raw=true?raw=true)
 
 <b>Mobile version</b>
 
-|                                                        1                                                        |                                                        2                                                        |                                                        3                                                        |
-| :-------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: |
-| ![alt text](https://github.com/Feshior-WEB/TractiveTask/blob/main/github_images/phone1-screenshot.PNG?raw=true) | ![alt text](https://github.com/Feshior-WEB/TractiveTask/blob/main/github_images/phone2-screenshot.PNG?raw=true) | ![alt text](https://github.com/Feshior-WEB/TractiveTask/blob/main/github_images/phone3-screenshot.PNG?raw=true) |
+|                                                         1                                                         |                                                         2                                                         |                                                         3                                                         |
+| :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
+| ![alt text](https://github.com/Feshior-WEB/PortableSlider/blob/main/github_images/phone1-screenshot.PNG?raw=true) | ![alt text](https://github.com/Feshior-WEB/PortableSlider/blob/main/github_images/phone2-screenshot.PNG?raw=true) | ![alt text](https://github.com/Feshior-WEB/PortableSlider/blob/main/github_images/phone3-screenshot.PNG?raw=true) |
 
 <h1>Developing proccess:</h1>
 <h3>Task descripion:</h3>
