@@ -43,6 +43,28 @@ function initializeSlider() {
             slide.addEventListener('touchmove', touchMove);
         });
     } else {
+        //Removing listeners
+        slides.forEach((slide, index) => {
+            slide.removeEventListener('mousedown', (event) => {
+                touchStart(event, index);
+            });
+            slide.removeEventListener('mouseup', (event) => {
+                touchEnd(event);
+            });
+            slide.removeEventListener('mouseleave', (event) => {
+                touchEnd(event);
+            });
+            slide.removeEventListener('mousemove', touchMove);
+
+            //Touch events for mobile devivces
+            slide.removeEventListener('touchstart', (event) => {
+                touchStart(event, index);
+            });
+            slide.removeEventListener('touchend', (event) => {
+                touchEnd(event);
+            });
+            slide.removeEventListener('touchmove', touchMove);
+        });
         //Removing progressbar for PC version
         document.querySelector('.progressbar-container').style.display = 'none';
         //Reseting position
@@ -63,7 +85,10 @@ addEventListener('resize', (event) => {
 function recalculateSizes() {
     if (slides.length > 0) {
         let style = window.getComputedStyle(slides[0]);
-        cardWidth = slides[0].offsetWidth + parseFloat(style.marginLeft);
+        cardWidth =
+            slides[0].offsetWidth +
+            parseFloat(style.marginLeft) +
+            parseFloat(style.marginRight);
     }
 }
 
@@ -114,7 +139,7 @@ function touchEnd(event) {
     //Prevent index change if user clicks on a item, instead of sliding it
     if (Math.abs(moveBy) > 6) {
         setPositionByIndex();
-        setSliderByIndex();
+        setProgressbarByIndex();
     }
 }
 
@@ -146,7 +171,7 @@ function setPositionByIndex() {
     setSliderPosition();
 }
 
-function setSliderByIndex() {
+function setProgressbarByIndex() {
     let width = Math.round(
         (parseFloat(currentIndex) / (slides.length - 2)) * 100
     );
