@@ -30,6 +30,6 @@
 <li><b>Responsive Behavior:</b> To ensure the slider adapts to changes in window size, I added an event listener for the resize event. When the window is resized, the `recalculateSizes` function recalculates the card width and adjusts the slider accordingly.</li>
 
 <h1>Usage:</h1>
-<li>You can add as many items as needed; the slider will work correctly. However, please note that the slider is disabled on the PC version, because of that it's not recommended to add more than 6 items.</li>
+<li>You can add as many items as needed, the slider will work correctly. However, please note that the slider is disabled on the PC version, because of that it's not recommended to add more than 6 items.</li>
 <li>It's possible to make the slider smaller or bigger. To do this, use a div that overlaps the slider.</li>
 <li>On mobile devices, the slider is limited to 2 items on the screen.</li>
